@@ -1,0 +1,40 @@
+/**
+ * The following styles get applied both on the front of your site and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-cta-block {
+	background: #0DD164;
+	font-size: 2.2rem;
+	font-weight: 400;
+	line-height: 42px;
+	padding: 3rem;
+	text-align: right;
+	@media screen and (min-width: 760px) {
+		font-size: 2.6rem;
+		padding: 8.5rem 10.5rem;
+	}
+
+	&.alignfull {
+		margin-bottom: 0;
+		margin-top: 0;
+		width: 90vw;
+	}
+
+	//remove top margin of following element
+	+ * {
+		margin-top: 0;
+	}
+
+	a {
+		border-bottom-color: #fff;
+	}
+
+	a:hover,
+	a:focus,
+	a.focus,
+	a.js-focus {
+		background: #fff;
+	}
+}

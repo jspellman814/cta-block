@@ -1,0 +1,26 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-cta-block {
+	background: #0DD164;
+	font-size: 26px;
+	padding: 2rem 4rem;
+
+	&.alignfull {
+		width: auto !important;
+	}
+
+	a {
+		border-bottom-color: #fff;
+
+		&:hover,
+		&:focus,
+		&.focus,
+		&.js-focus {
+			background: #fff;
+		}
+	}
+}
