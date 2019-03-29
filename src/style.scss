@@ -1,40 +1,48 @@
-/**
- * The following styles get applied both on the front of your site and in the editor.
- *
- * Replace them with your own styles or remove the file completely.
- */
+$cta-blue:#0A3f65;
+$white:#fff;
 
-.wp-block-cta-block {
-	background: #0DD164;
-	font-size: 2.2rem;
-	font-weight: 400;
-	line-height: 42px;
-	padding: 3rem;
-	text-align: right;
-	@media screen and (min-width: 760px) {
-		font-size: 2.6rem;
-		padding: 8.5rem 10.5rem;
-	}
+.blue-cta {
+    background: $cta-blue;
+    color: $white;
+    font-size: 1.7rem;
+    line-height: 2.8rem;
+    margin: 0 auto;
+    padding: 4.5rem 8rem;
+    text-align: center;
 
-	&.alignfull {
-		margin-bottom: 0;
-		margin-top: 0;
-		width: 90vw;
-	}
+    * {
+        color: $white;
+    }
 
-	//remove top margin of following element
-	+ * {
-		margin-top: 0;
-	}
+    h2,
+    h3 {
+        font-weight: 400;
+    }
 
-	a {
-		border-bottom-color: #fff;
-	}
+    &__button-link {
+        background: transparent;
+        border: 0.2rem solid $white;
+        border-radius: 0.3rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 1.5rem;
+        transition: all 0.3s;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 1.4rem 3.3rem 1.1rem;
+        color: #fff;
+        width: auto;
+        &:hover,
+        &:focus,
+        &.focus,
+        &.js-focus {
+            background: $white;
+            border-color: $white;
+            color: $cta-blue;
+        }
+    }
 
-	a:hover,
-	a:focus,
-	a.focus,
-	a.js-focus {
-		background: #fff;
-	}
+    &--wide {
+        max-width: none;
+    }
 }

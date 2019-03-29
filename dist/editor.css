@@ -1,16 +1,19 @@
-/**
- * The following styles get applied inside the editor only.
- *
- * Replace them with your own styles or remove the file completely.
- */
-.wp-block-cta-block {
-  background: #0DD164;
-  font-size: 26px;
-  padding: 2rem 4rem; }
-  .wp-block-cta-block.alignfull {
-    width: auto !important; }
-  .wp-block-cta-block a {
-    border-bottom-color: #fff; }
-    .wp-block-cta-block a:hover, .wp-block-cta-block a:focus, .wp-block-cta-block a.focus, .wp-block-cta-block a.js-focus {
-      background: #fff; }
+.blue-cta__button-text:not([data-is-placeholder-visible="true"]) {
+  background: transparent;
+  border: 0.2rem solid #FFF;
+  border-radius: 0.3rem;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1.4rem 3.3rem 1.1rem;
+  color: #fff;
+  width: auto; }
+  .blue-cta__button-text:not([data-is-placeholder-visible="true"]):hover, .blue-cta__button-text:not([data-is-placeholder-visible="true"]):focus, .blue-cta__button-text:not([data-is-placeholder-visible="true"]).focus, .blue-cta__button-text:not([data-is-placeholder-visible="true"]).js-focus {
+    background: #FFF;
+    border-color: #FFF;
+    color: #0A3f65; }
 
